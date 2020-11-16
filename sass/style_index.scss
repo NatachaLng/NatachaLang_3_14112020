@@ -21,6 +21,11 @@ $black: #0f1614;
 	font-family: "roboto";
 }
 
+a 
+{
+	text-decoration: none;
+	color: unset;
+}
 
 
 /*HEADER*/
@@ -183,6 +188,7 @@ $black: #0f1614;
 .restaurant__details
 {
 	position: relative;
+	color: black;
 	width: 85%;
 	max-height: 250px;
 	border:7px solid white;
@@ -213,6 +219,15 @@ $black: #0f1614;
 	right:20px;
 }
 
+.link__restaurant
+{
+	text-decoration: none;
+	color: black;
+	&:hover{
+		color:$purple;
+	}
+}
+
 .fa-heart
 {
 	position: absolute;
@@ -232,7 +247,7 @@ $black: #0f1614;
 .fa-heart:hover
 {
 	&+.fa-heart-progress{
-	transform: scale(1);
+	transform: scale(1.02);
 }
 }
 
@@ -262,7 +277,6 @@ footer
 }
 
 .footer__element--link, 
-a
 {
 		color:white;
 		text-decoration: none;
