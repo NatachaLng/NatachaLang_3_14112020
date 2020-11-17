@@ -132,7 +132,9 @@ h1
 
 .main
  {
- 	margin-left: 10px;
+	animation: fadein 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
  }
 
 .main__title
@@ -171,6 +173,9 @@ h1
 	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
 	overflow: hidden;
 	position:relative;
+	animation: fadein 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
 	&--flex1{
 		display:flex;
 		justify-content: space-between;
@@ -178,6 +183,32 @@ h1
 		font-weight: bold;
 		margin: 10px;
 	}
+}
+
+@keyframes fadein 
+{
+  0% {opacity:0;}
+  100% {opacity:1;transform: translateY(-5px);}
+}
+
+.animation__1
+{
+	animation-delay: 250ms;
+}
+
+.animation__2
+{
+	animation-delay: 500ms;
+}
+
+.animation__3
+{
+	animation-delay: 750ms;
+}
+
+.animation__4
+{
+	animation-delay: 1000ms;
 }
 
 .main__article:hover
