@@ -134,7 +134,8 @@ a {
 	background-color: white;
 	border-bottom: 2px solid #A9a9a9;
 	.header__logo {
-	width: 50%
+	width: auto;
+	max-height: 90%;
 	}
 }
 
@@ -166,6 +167,7 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
+	text-align: center;
 	background-color: #EEEEEE;
 	height: 280px;
 	.discover__title{
@@ -429,3 +431,72 @@ footer
 	margin-right: 14px;
 }
 
+@media only screen and (max-width: 1080px) 
+
+{
+	nav
+	{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1080px) 
+
+{
+
+li
+{
+	list-style-type: none;
+}
+
+.header
+{
+	display: none;
+}
+
+.header__web 
+{
+	position: sticky;
+	top: 0;
+	height: 70px;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.header__logo--web
+{
+    margin-left: 10px;
+    margin-top: 15px;
+    max-height: 40px;
+}
+
+.navbar
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.navbar_link
+{
+	width: 150px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	&:hover
+	{
+		border-bottom: 3px solid $mint;
+		font-weight: bold;
+	}
+}
+
+}
