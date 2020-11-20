@@ -19,6 +19,7 @@ $black: #0f1614;
 	padding :0;
 	overflow-wrap: break-word;
 	font-family: "roboto";
+	scroll-behavior: smooth;
 }
 
 a 
@@ -438,6 +439,16 @@ footer
 	{
 		display: none;
 	}
+
+	.caroussel
+	{
+		display: none;
+	}
+
+	.search__button
+	{
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1080px) 
@@ -497,6 +508,127 @@ nav
 		border-bottom: 3px solid $mint;
 		font-weight: bold;
 	}
+}
+
+.container1
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.container2
+{
+	width: 60%;
+}
+
+.discover
+{
+	background-color: white;
+}
+
+.location
+{
+	display: none;
+}
+
+.slider
+{
+	object-fit: cover;
+}
+
+.operation
+{
+	width: 35%;
+}
+
+.btn__gradient
+{
+	display: none;
+}
+
+#map
+{
+	padding: 15px;
+	padding-bottom: 18px;
+	margin-right: -2px;
+	color: black !important;
+	background-color: #F2F2F2;
+	border-radius: 20px 0px 0px 20px;
+	box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.15);
+}
+
+#site-search
+{
+	height: 50px;
+	width: 180px;
+	font-family:"Roboto";
+	border: 1px solid #F2F2F2;
+	box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.15);
+}
+
+#search
+{
+	height: 50px;
+	width: auto;
+	color: white;
+	font-size: 1em;
+	font-family:"Roboto";
+	border-radius: 0px 20px 20px 0px;
+	background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+	border: 1px solid white;
+	margin-left: -4px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.15);
+	transition: background-image 1s;
+	&:hover {
+		background-image: linear-gradient(to bottom, #ff80dc, #e875dc, #cf6cdb, #b464da, #955dd9);
+		box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.20);
+	}
+}
+
+.fa-search
+{
+	background-color: #0065DC !important;
+	color: white !important;
+}
+
+.restaurant__flex
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.restaurant__details
+{
+	width: 35%;
+	max-height: 280px;
+	margin: 30px;
+}
+
+footer 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer__logo
+{
+	height: 60%;
+	width: auto;
+}
+
+.footer__section
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.2em;
 }
 
 }

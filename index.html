@@ -23,19 +23,17 @@
 		<nav>
 			<div><img class="header__logo--web" src="images/logo/ohmyfood.png" alt="logo ohmyfood" title="logo ohmyfood"></div>
 			<div><ul class="navbar">
-			<li class="navbar_link"><a href="#">Une envie?</a></li>
-			<li class="navbar_link"><a href="#">Nos restaurants</a></li>
+			<li class="navbar_link"><a href="#container1">Une envie?</a></li>
+			<li class="navbar_link"><a href="#restaurant">Nos restaurants</a></li>
 			<li class="navbar_link"><a href="#">Le concept</a></li>
 			</ul></div>
 		</nav>
 	</div>
 	</header>
 
-<section class="container1">
-	<div>
-		<img class="restaurant__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" title="La palette du goût">
-	</div>	
-	<div>
+
+	<div id="container1" class="container1">
+	<div class="container2">
 	<section class="location">
 		<h4 class="location__title"><i class="location__title--icon fas fa-map-marker-alt" id="map"></i>Paris, Belleville</h4>
 	</section>
@@ -44,7 +42,15 @@
 		<div><h1 class="discover__title">Réservez le menu qui vous convient</h1></div>
 		<div><h4 class="discover__description">Découvrez des restaurants d'exception, sélectionnés par nos soins</h4></div>
 		<div><a href="#restaurant"><button class="btn btn__gradient">Explorer nos restaurants</button></div></a>
+		<div class="search__button"><p><i class="fas fa-map-marker-alt" id="map"></i><input type="search" id="site-search" name="q"
+       aria-label="Search through site content" placeholder="Paris, France">
+			<button id="search"
+        		type="button">
+    			Explorer nos restaurants
+		</button>
+		</p></div>
 	</section>
+	</div>
 
 	<section class="operation">
 		<h3 class="section__title">Fonctionnement</h3>
@@ -67,9 +73,8 @@
 		</div>
 		</section>
 	</div>
-</section>
 
-	<section class="restaurant">
+	<section id="restaurant" class="restaurant">
 		<h3 class="section__title">Restaurants</h3>
 		<div class="restaurant__flex">
 			<article class="restaurant__details restaurant__details--new"><a href="la_palette_du_gout.html" class="link__restaurant">
@@ -102,13 +107,13 @@
 	</section>
 
 	<footer>
-		<img class="logo footer__logo" src="images/logo/ohmyfoodblanc.png" alt="logo ohmyfood" title="logo ohmyfood">
-		<ul class="footer__section">
+		<div><img class="logo footer__logo" src="images/logo/ohmyfoodblanc.png" alt="logo ohmyfood" title="logo ohmyfood"></div>
+		<div><ul class="footer__section">
 			<li class="footer__element"><i class="fas fa-utensils footer__element--icon"></i>Proposer un restaurant</li>
 			<li class="footer__element"><i class="fas fa-hands-helping footer__element--icon"></i>Devenir partenaire</li>
 			<li class="footer__element">Mentions légales</li>
 			<li class="footer__element footer__element--link"><a href="mailto:contact@ohmyfood.com">Contacts</a></li>
-		</ul>
+		</ul></div>
 	</footer>
 
 </body>
