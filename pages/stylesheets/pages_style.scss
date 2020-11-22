@@ -127,13 +127,14 @@ h1
 {
 	margin-left: -52px;
 	color: $purple;
-	transform-origin: 50% 100%;
+	transform-origin: 50% 50%;
 	transform: scale(0);
 	transition: transform 1000ms cubic-bezier(.32,0,.07,1);
 }
 
 .fa-heart:hover
 {
+	color: $purple;
 	&+.fa-heart-progress{
 	transform: scale(1.02);
 }
@@ -381,4 +382,54 @@ a
 .fa-utensils
 {
 	margin-right: 14px;
+}
+
+@media only screen and (max-width: 1080px) 
+
+{
+	nav
+	{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 1080px) 
+{
+
+.flex__menu
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.main
+{
+	max-width: 340px;
+	min-width: 250px;
+}
+
+footer 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer__logo
+{
+	height: 60%;
+	width: auto;
+}
+
+.footer__section
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+
 }
