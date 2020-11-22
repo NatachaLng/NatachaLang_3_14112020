@@ -219,13 +219,13 @@ a {
 	justify-content: center;
 	flex-direction: column;
 	margin: 20px;
-	height: 150px;
 }
 
 
 .operation__block
 {
 	width: 85%;
+	min-height: 60px;
 	display: flex;
 	align-items: center;
 	border:1px solid $lightgrey ;
@@ -241,7 +241,6 @@ a {
 {
 	background-color: #e9ddf8;
 	border: 1px solid #e9ddf8;
-	margin-bottom: 30px;
 }
 
 
@@ -401,6 +400,19 @@ footer
 .fa-utensils
 {
 	margin-right: 14px;
+}
+
+@media only screen and (max-width: 1080px)
+{
+	nav
+	{
+		display: none;
+	}
+
+	.search__button
+	{
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1080px) 
