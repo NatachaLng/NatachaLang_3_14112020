@@ -7,10 +7,12 @@ $black: #0f1614;
 
 @font-face
 {
-	font-family: "robotothin";
-	src: url('font/Robotothin.ttf') format('truetype');
+	font-family: "robotoLight";
+	src: url('font/Roboto-Light.ttf') format('truetype');
 	font-family: "roboto";
 	src: url('font/Roboto.ttf') format('truetype');
+	font-family: "robotoBold";
+	src: url('font/Roboto-Bold.ttf') format('truetype');
 }
 
 *
@@ -120,10 +122,10 @@ a
 	height: 60px;
 	width: 100%;
 	background-color: white;
-	border-bottom: 2px solid #A9a9a9;
+	box-shadow: 0 5px 5px rgba(182, 182, 182, 0.95);
 	.header__logo {
 	width: auto;
-	max-height: 90%;
+	height: 50%;
 	}
 }
 
@@ -132,7 +134,7 @@ a
 .location
 {
 	height: 40px;
-	background-color: #DCDCDC;
+	background-color: #E0E0E0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -159,7 +161,8 @@ a
 	background-color: #EEEEEE;
 	height: 280px;
 	.discover__title{
-		margin-top: 1rem;
+		margin-top: 2rem;
+		font-family: "robotoBold"
 	}
 }
 
@@ -174,12 +177,12 @@ a
 .btn__gradient 
 {
 	background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-	border-radius: 20px;
+	border-radius: 30px;
 	font-size: 1.2em;
 	color: white;
 	border: none;
 	padding: 15px;
-	margin: 0 15px 0 15px;
+	margin: 25px 15px 0 15px;
 	margin-bottom: 50px;
 	box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.15);
 	transition: background-image 1s;
@@ -224,7 +227,8 @@ a
 }
 
 
-.operation__block:hover
+.operation__block:hover,
+.operation__block:active
 {
 	background-color: #e9ddf8;
 	border: none;
@@ -317,6 +321,7 @@ a
 .restaurant__loc
 {
 	font-weight: lighter;
+	font-size: 1em;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }

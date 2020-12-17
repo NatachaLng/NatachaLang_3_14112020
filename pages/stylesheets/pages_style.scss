@@ -223,14 +223,18 @@ h1
 	animation-delay: 1000ms;
 }
 
-.main__article:hover
+.main__article:hover,
+.main--article:focus,
+.main__article:active
 {
 	.main__article--animation{
 		transform: translateX(-100%);
 	}
 }
 
-.main__article:hover
+.main__article:hover,
+.main--article:focus,
+.main__article:active
 {
 	.main__article--price{
 		transform: translateX(-100%);
@@ -243,7 +247,9 @@ h1
 	overflow-wrap: unset;
 	text-overflow:ellipsis;
 }
-.main__article:hover
+.main__article:hover,
+.main--article:focus,
+.main__article:active
 {
 	.fa-check-circle{
 		transform: rotate(-1turn);
@@ -251,7 +257,9 @@ h1
 	}
 }
 
-.main__article:hover
+.main__article:hover,
+.main__article:focus, 
+.main__article:active
 {
 	.main__article--description{
 		width :50% ;
