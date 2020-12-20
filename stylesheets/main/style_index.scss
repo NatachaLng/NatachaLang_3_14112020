@@ -347,7 +347,11 @@ a
 
 .heartgradient{
     opacity: 0;
-    color: $purple;
+    background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+    background-clip: border-box;
+	font-variant: normal;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .heart{

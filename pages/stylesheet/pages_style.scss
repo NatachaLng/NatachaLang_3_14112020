@@ -126,16 +126,20 @@ h1
 .fa-heart-progress
 {
 	margin-left: -52px;
-	color: $purple;
+	background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+    background-clip: border-box;
+	font-variant: normal;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	transform-origin: 50% 50%;
 	transform: scale(0);
 	transition: transform 1000ms cubic-bezier(.32,0,.07,1);
 }
 
-.fa-heart:hover
+#fa-heart:hover
 {
 	color: $purple;
-	&+.fa-heart-progress{
+	> .fa-heart-progress{
 	transform: scale(1.02);
 }
 }
